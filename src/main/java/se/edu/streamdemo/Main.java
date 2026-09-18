@@ -69,5 +69,4 @@ public class Main {
                 .filter((Task t) -> t instanceof Deadline)
                 .forEach(System.out::println);
     }
-
 }

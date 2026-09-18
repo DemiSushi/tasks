@@ -58,6 +58,7 @@ public class Main {
     }
 
     public static ArrayList<Task> filterTaskByString(ArrayList<Task> tasks, String filterString){
+        System.out.println("Filtering Task");
         return (ArrayList<Task>) tasks.stream()
                 .filter(t -> t.getDescription().contains(filterString))
                 .collect(toList());
